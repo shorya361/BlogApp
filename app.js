@@ -8,9 +8,7 @@ var express=require("express"),
 
 // app config   
 
-mongoose.connect('mongodb+srv://punk_GTS:blackcaps434@shorya-moefa.mongodb.net/BlogApp_v1?retryWrites=true&w=majority', {useNewUrlParser: true , useUnifiedTopology: true }); //to connect to mongodb ATLAS database
-
-//mongoose.connect('mongodb://localhost:27017/BlogApp', {useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/BlogApp', {useNewUrlParser: true , useUnifiedTopology: true });
 app.set("view engine","ejs");
 mongoose.set('useFindAndModify', false);
 app.use(express.static("public"));
